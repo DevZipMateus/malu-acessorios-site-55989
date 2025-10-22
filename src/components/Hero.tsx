@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in">
             <Button asChild size="lg" variant="default">
               <a
-                href="https://wa.me/5577999952030"
+                href="https://wa.me/5577998709254"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

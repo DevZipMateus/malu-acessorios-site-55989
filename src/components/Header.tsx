@@ -67,7 +67,7 @@ const Header = () => {
               </>
             )}
             <Button asChild variant="default" size="sm">
-              <a href="https://wa.me/5577999952030" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://wa.me/5577998709254" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <img src={whatsappIcon} alt="WhatsApp" className="w-4 h-4" />
                 Fale conosco
               </a>
@@ -111,7 +111,7 @@ const Header = () => {
               </>
             )}
             <Button asChild variant="default" className="w-full">
-              <a href="https://wa.me/5577999952030" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
+              <a href="https://wa.me/5577998709254" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
                 <img src={whatsappIcon} alt="WhatsApp" className="w-4 h-4" />
                 Fale conosco
               </a>

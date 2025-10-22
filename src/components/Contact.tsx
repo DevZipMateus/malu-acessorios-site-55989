@@ -26,12 +26,12 @@ const Contact = () => {
       title: "Telefone",
       content: (
         <a
-          href="https://wa.me/5577999952030"
+          href="https://wa.me/5577998709254"
           className="hover:text-primary transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
-          (77) 99995-2030
+          (77) 99870-9254
         </a>
       ),
     },
@@ -113,7 +113,7 @@ const Contact = () => {
         <div className="text-center">
           <Button asChild size="lg" variant="default">
             <a
-              href="https://wa.me/5577999952030"
+              href="https://wa.me/5577998709254"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
