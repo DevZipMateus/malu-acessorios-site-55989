@@ -12,8 +12,8 @@ const Hero = () => {
             <span className="text-sm font-medium">Seu shopping da beleza</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-            Malu Acessórios Ltda
+          <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 animate-fade-in">
+            Malú
           </h1>
           
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
