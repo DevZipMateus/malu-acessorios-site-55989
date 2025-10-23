@@ -20,7 +20,7 @@ const Vitrine = () => {
         <Header />
         <main className="pt-20 flex-grow">
           <iframe 
-            src="https://v4.egestor.com.br/vitrine/?s=maluacessorios" 
+            src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
             style={{ width: '100%', height: '800px', border: 'none' }}
             title="Demonstração de Vitrine - Malu Acessórios"
           />
