@@ -7,8 +7,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 100vh - 80px (header) - 63px (rodapé montesite)
-      const height = window.innerHeight - 80 - 63;
+      // 100vh - 80px (header)
+      const height = window.innerHeight - 80;
       setIframeHeight(height);
     };
 
@@ -44,11 +44,9 @@ const Vitrine = () => {
                 width: '100%', 
                 height: `${iframeHeight}px`, 
                 border: 'none',
-                display: 'block',
-                overflow: 'hidden'
+                display: 'block'
               }}
               title="Demonstração de Vitrine - Malu Acessórios"
-              scrolling="no"
             />
           )}
         </main>
