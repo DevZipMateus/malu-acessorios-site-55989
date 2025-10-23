@@ -3,10 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 
 const Vitrine = () => {
-  const [iframeHeight, setIframeHeight] = useState(() => {
-    // Calcula altura inicial imediatamente
-    return window.innerHeight - 80 - 63;
-  });
+  const [iframeHeight, setIframeHeight] = useState(0);
 
   useEffect(() => {
     const calculateHeight = () => {
@@ -15,6 +12,10 @@ const Vitrine = () => {
       setIframeHeight(height);
     };
 
+    // Calcula altura inicial
+    calculateHeight();
+    
+    // Recalcula ao redimensionar
     window.addEventListener('resize', calculateHeight);
     
     return () => window.removeEventListener('resize', calculateHeight);
@@ -33,19 +34,23 @@ const Vitrine = () => {
         <link rel="canonical" href="https://www.maluacessorios.com.br/vitrine" />
       </Helmet>
       
-      <div className="h-screen flex flex-col overflow-hidden">
+      <div className="fixed inset-0 flex flex-col overflow-hidden">
         <Header />
-        <main className="pt-20 flex-grow overflow-hidden">
-          <iframe 
-            src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
-            style={{ 
-              width: '100%', 
-              height: `${iframeHeight}px`, 
-              border: 'none',
-              display: 'block'
-            }}
-            title="Demonstração de Vitrine - Malu Acessórios"
-          />
+        <main className="flex-1 pt-20">
+          {iframeHeight > 0 && (
+            <iframe 
+              src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
+              style={{ 
+                width: '100%', 
+                height: `${iframeHeight}px`, 
+                border: 'none',
+                display: 'block',
+                overflow: 'hidden'
+              }}
+              title="Demonstração de Vitrine - Malu Acessórios"
+              scrolling="no"
+            />
+          )}
         </main>
       </div>
     </>
