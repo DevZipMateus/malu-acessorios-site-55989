@@ -7,8 +7,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 100vh - 80px (header)
-      const height = window.innerHeight - 80;
+      // 100vh - 80px (header) - 63px (rodapé montesite)
+      const height = window.innerHeight - 143;
       setIframeHeight(height);
     };
 
@@ -34,9 +34,9 @@ const Vitrine = () => {
         <link rel="canonical" href="https://www.maluacessorios.com.br/vitrine" />
       </Helmet>
       
-      <div className="fixed inset-0 flex flex-col overflow-hidden">
+      <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1 pt-20">
+        <main className="flex-1 relative">
           {iframeHeight > 0 && (
             <iframe 
               src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
