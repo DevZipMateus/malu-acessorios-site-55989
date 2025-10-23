@@ -46,7 +46,7 @@ const Vitrine = () => {
           }
         ` }} />
         <Header />
-        <main className="flex-1 relative">
+        <main className="flex-1 relative pt-20">
           {iframeHeight > 0 && (
             <iframe 
               src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
