@@ -7,8 +7,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 100vh - 80px (header)
-      const height = window.innerHeight - 80;
+      // 100vh - 80px (header) - 63px (rodapé montesite)
+      const height = window.innerHeight - 80 - 63;
       setIframeHeight(height);
     };
 
