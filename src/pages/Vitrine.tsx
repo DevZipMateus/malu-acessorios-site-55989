@@ -7,8 +7,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 100vh - 80px (header) - 63px (rodapé montesite)
-      const height = window.innerHeight - 80 - 63;
+      // 100vh - 80px (header)
+      const height = window.innerHeight - 80;
       setIframeHeight(height);
     };
 
@@ -36,7 +36,7 @@ const Vitrine = () => {
       
       <div className="fixed inset-0 flex flex-col overflow-hidden">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 pt-20">
           {iframeHeight > 0 && (
             <iframe 
               src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
