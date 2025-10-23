@@ -7,8 +7,8 @@ const Vitrine = () => {
 
   useEffect(() => {
     const calculateHeight = () => {
-      // 100vh - 80px (header) - 63px (rodapé montesite)
-      const height = window.innerHeight - 143;
+      // 100vh - 80px (header)
+      const height = window.innerHeight - 80;
       setIframeHeight(height);
     };
 
@@ -34,7 +34,17 @@ const Vitrine = () => {
         <link rel="canonical" href="https://www.maluacessorios.com.br/vitrine" />
       </Helmet>
       
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col overflow-hidden">
+        <style dangerouslySetInnerHTML={{ __html: `
+          #montesite-footer-badge {
+            position: fixed !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 40 !important;
+            height: 63px !important;
+          }
+        ` }} />
         <Header />
         <main className="flex-1 relative">
           {iframeHeight > 0 && (
