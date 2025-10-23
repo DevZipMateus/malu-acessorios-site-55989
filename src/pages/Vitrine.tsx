@@ -36,7 +36,7 @@ const Vitrine = () => {
       
       <div className="fixed inset-0 flex flex-col overflow-hidden">
         <Header />
-        <main className="flex-1 pt-20">
+        <main className="flex-1">
           {iframeHeight > 0 && (
             <iframe 
               src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
