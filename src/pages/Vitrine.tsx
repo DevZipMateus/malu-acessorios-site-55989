@@ -1,8 +1,23 @@
 import { Helmet } from "react-helmet";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const Vitrine = () => {
+  const [iframeHeight, setIframeHeight] = useState(0);
+
+  useEffect(() => {
+    const calculateHeight = () => {
+      // 100vh - 80px (header) - 63px (rodapé montesite)
+      const height = window.innerHeight - 80 - 63;
+      setIframeHeight(height);
+    };
+
+    calculateHeight();
+    window.addEventListener('resize', calculateHeight);
+    
+    return () => window.removeEventListener('resize', calculateHeight);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -16,16 +31,20 @@ const Vitrine = () => {
         <link rel="canonical" href="https://www.maluacessorios.com.br/vitrine" />
       </Helmet>
       
-      <div className="min-h-screen flex flex-col">
+      <div className="h-screen flex flex-col overflow-hidden">
         <Header />
-        <main className="pt-20 flex-grow">
+        <main className="pt-20 flex-grow overflow-hidden">
           <iframe 
             src="https://v4.egestor.com.br/vitrine/?s=flavialelis" 
-            style={{ width: '100%', height: '800px', border: 'none' }}
+            style={{ 
+              width: '100%', 
+              height: `${iframeHeight}px`, 
+              border: 'none',
+              display: 'block'
+            }}
             title="Demonstração de Vitrine - Malu Acessórios"
           />
         </main>
-        <Footer />
       </div>
     </>
   );
