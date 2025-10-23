@@ -3,7 +3,10 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 
 const Vitrine = () => {
-  const [iframeHeight, setIframeHeight] = useState(0);
+  const [iframeHeight, setIframeHeight] = useState(() => {
+    // Calcula altura inicial imediatamente
+    return window.innerHeight - 80 - 63;
+  });
 
   useEffect(() => {
     const calculateHeight = () => {
@@ -12,7 +15,6 @@ const Vitrine = () => {
       setIframeHeight(height);
     };
 
-    calculateHeight();
     window.addEventListener('resize', calculateHeight);
     
     return () => window.removeEventListener('resize', calculateHeight);
