@@ -42,7 +42,7 @@ const Hero = () => {
               variant="outline"
               className="bg-white/60 hover:bg-white border-primary/30 hover:border-primary"
             >
-              <a href="#produtos">Conheça nossos produtos</a>
+              <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer">Conheça nossos produtos</a>
             </Button>
           </div>
         </div>
