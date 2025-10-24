@@ -50,9 +50,9 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <Link to="/vitrine" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Vitrine
-                </Link>
+                </a>
               </li>
               <li>
                 <button onClick={() => scrollToSection("contato")} className="text-sm text-muted-foreground hover:text-primary transition-colors">

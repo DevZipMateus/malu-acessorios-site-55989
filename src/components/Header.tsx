@@ -49,9 +49,9 @@ const Header = () => {
                 <button onClick={() => scrollToSection("produtos")} className="text-foreground hover:text-primary transition-colors font-medium">
                   Produtos
                 </button>
-                <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium">
+                <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors font-medium">
                   Vitrine
-                </Link>
+                </a>
                 <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium">
                   Contato
                 </button>
@@ -61,9 +61,9 @@ const Header = () => {
                 <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
                   Início
                 </Link>
-                <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium">
+                <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors font-medium">
                   Vitrine
-                </Link>
+                </a>
               </>
             )}
             <Button asChild variant="default" size="sm">
@@ -93,9 +93,9 @@ const Header = () => {
                 <button onClick={() => scrollToSection("produtos")} className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2">
                   Produtos
                 </button>
-                <Link to="/vitrine" className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer" className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
                   Vitrine
-                </Link>
+                </a>
                 <button onClick={() => scrollToSection("contato")} className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2">
                   Contato
                 </button>
@@ -105,9 +105,9 @@ const Header = () => {
                 <Link to="/" className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
                   Início
                 </Link>
-                <Link to="/vitrine" className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer" className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
                   Vitrine
-                </Link>
+                </a>
               </>
             )}
             <Button asChild variant="default" className="w-full">
