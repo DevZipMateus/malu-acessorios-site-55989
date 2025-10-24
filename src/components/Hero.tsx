@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import whatsappIcon from "@/assets/whatsapp-icon.png";
 
 const Hero = () => {
@@ -42,7 +43,7 @@ const Hero = () => {
               variant="outline"
               className="bg-white/60 hover:bg-white border-primary/30 hover:border-primary"
             >
-              <a href="https://v4.egestor.com.br/vitrine/?s=flavialelis" target="_blank" rel="noopener noreferrer">Conheça nossos produtos</a>
+              <Link to="/vitrine">Conheça nossos produtos</Link>
             </Button>
           </div>
         </div>
